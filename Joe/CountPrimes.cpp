@@ -25,10 +25,29 @@ public:
     int countPrimes(int n) {
       for (int i=1 ; i<n; i++) {
         int check = 0;
+        if (i!=2&&i%2==0) {
+            continue;
+        }
+        if (i!=3&&i%3==0) {
+            continue;
+        }
+        if (i!=5&&i%5==0) {
+            continue;
+        }
+        if (i!=7&&i%7==0) {
+            continue;
+        }
+        if (i!=11&&i%11==0) {
+            continue;
+        }
         for (int j=1; j<i; j++) {
             if (i%j==0) {
                 check++;
             }
+            if (j*j==i) {
+                break;
+            }
+            
         }
         if (check == 1) {
             count++;
