@@ -1,5 +1,5 @@
-class Solution:
-    def addToArrayForm(self, num: List[int], k: int) -> List[int]:
+class Solution(object):
+    def addToArrayForm(self, num, k):
         temp = int("".join(map(str,num)))
         temp = str(temp + k)
         result = []
