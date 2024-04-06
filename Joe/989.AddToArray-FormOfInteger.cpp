@@ -11,10 +11,12 @@ public:
             i++;
         }
         int total = number + k;
-        std::string str = std::to_string(total);
-        std::vector<int> result;
-        // for (int j : str) {
-        //     result.push_back(std::stoi(j));
+        // std::string str = to_string(total);
+        // std::vector<int> result;
+        // for (char j : str) {
+        //     int k = j - '0';
+        //     result.push_back(k);
         // }
+        // return result;
     }
 };
